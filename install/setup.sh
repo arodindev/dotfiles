@@ -10,7 +10,7 @@ command -v zsh | sudo tee -a /etc/shells
 chsh -s $(which zsh) # make zsh default
 
 echo "== INSTALL OTHER OH-MY-ZSH PLUGINS =="
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions
 
 echo "== INSTALL NERDFONT =="
 echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/DroidSansMono.zip"
