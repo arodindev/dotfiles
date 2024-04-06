@@ -33,4 +33,12 @@ mkdir -p ~/.config/wezterm/
 cp ./.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
 cp ./.zsh/aliases.zsh ~/.zsh
 
+# pyenv
+{
+  echo "export PYENV_ROOT='$HOME/.pyenv'"
+  echo "command -v pyenv >/dev/null || export PATH='$PYENV_ROOT/bin:$PATH'"
+  echo "eval '$(pyenv init -)'"
+  echo "eval '$(pyenv virtualenv-init -)'"
+} >> ~/.zshrc
+
 echo "== RESTART PC =="
